@@ -10,7 +10,7 @@ A class should be easy to modify and, at the same time, we should be able to cha
 
 ## Code example - figures
 ```php
-
+<?php
 // Our contract that we will need to satisfy
 interface Shape {
 	public function area();
@@ -63,9 +63,11 @@ class AreaCalculator {
 		return array_sum($area);
 	}
 }
+?>
 ```
 ## Code example - checkout
 ```php
+<?php
 interface PaymentMethodInterface {
 	public function acceptPayment(Receipt $receipt);
 }
@@ -83,4 +85,5 @@ class Checkout {
 		$payment->acceptPayment($receipt);
 	}
 }
+?>
 ```

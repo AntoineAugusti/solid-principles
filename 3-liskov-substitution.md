@@ -12,7 +12,7 @@
 
 ## Code example - video player
 ```php
-
+<?php
 class VideoPlayer {
 	public function play()
 	{
@@ -30,10 +30,12 @@ class AviVideoPlayer extends VideoPlayer {
 		}
 	}
 }
+?>
 ```
 
 ## Code example - video player
 ```php
+<?php
 interface LessonRepositoryInterface {
 	// We can't enforce the return value of this function
 	public function getAll();
@@ -61,5 +63,5 @@ function foo(LessonRepositoryInterface $lesson)
 	$lessons = $lesson->getAll();
 	// We may be force to test the type of $lessons..
 }
-
+?>
 ```
